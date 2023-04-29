@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/alumbrado4"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="230dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="4dp"
+        android:text="AppAlumbradoPublico"
+        android:textAlignment="center"
+        android:textColor="#F1EEEE"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/clitra"
+        android:layout_width="247dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <ImageButton
+        android:id="@+id/ing"
+        android:layout_width="248dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/alumbrado2"
+        android:onClick="RegistrarCaja"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="250dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/denuncia3"
+        android:onClick="Transacciones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ing" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="142dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/mapa1"
+        android:onClick="MapaTransacciones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clitra" />
+</androidx.constraintlayout.widget.ConstraintLayout>

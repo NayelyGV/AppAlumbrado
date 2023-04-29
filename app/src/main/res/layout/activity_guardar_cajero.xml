@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".GuardarCAjero" />
+
+    <Button
+        android:id="@+id/BtnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Guardar" />
+
+    <Button
+        android:id="@+id/BtnRegresarCajero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BtnGuardar"
+        android:text="regresar" />
+
+    <Button
+        android:id="@+id/BtnSatelitalCajero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BtnRegresarCajero"
+
+        android:text="Satelital" />
+
+    <Button
+        android:id="@+id/BtnNormalCajero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BtnSatelitalCajero"
+
+        android:text="Normal" />
+</RelativeLayout>

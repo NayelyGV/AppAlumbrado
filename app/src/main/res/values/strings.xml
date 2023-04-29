@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">segundoparcial</string>
+    <string name="title_activity_mapa_puntos_geo_graficos">MapaActivityPuntosGeoGraficos</string>
+    <string name="title_activity_mapa_general">MapaGeneral</string>
+    <string name="title_activity_maps_trans">MapsActivity_trans</string>
+</resources>
